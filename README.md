@@ -1,47 +1,44 @@
 # 🔢 Numerical Methods Calculator (C)
 
-A powerful command-line application developed in **C** to solve complex mathematical problems using numerical analysis methods. This project features a custom-built **Infix Expression Parser** that allows users to input mathematical functions directly as strings (e.g., `sin(x) + x^2 - 5`).
+## 📝 Description
+This project is a high-performance command-line application designed to solve complex mathematical problems through various **Numerical Analysis** techniques. 
+
+The standout feature of this tool is its **Infix Expression Evaluator**, which allows users to input mathematical functions as dynamic strings (e.g., `3*x + cos(x)^2`) instead of hardcoding them. It utilizes a custom Stack implementation to parse and calculate function values at runtime.
+
+---
 
 ## 🚀 Key Features
 
 ### 1. Root Finding Algorithms
 * **Bisection Method:** Finds roots by repeatedly bisecting an interval.
-* **Regula-Falsi (False Position):** A closed-bracket method using linear interpolation for root discovery.
-* **Newton-Raphson:** An open-bracket method using derivatives for fast convergence towards a root.
+* **Regula-Falsi:** Uses linear interpolation for interval-based root finding.
+* **Newton-Raphson:** Rapidly converges to a root using derivative approximations.
 
 ### 2. Linear Algebra & Matrix Operations
 * **Matrix Inversion:** Calculates the inverse of $n \times n$ matrices using Gaussian elimination.
-* **Cholesky Decomposition:** Solves $AX = B$ systems by decomposing matrices into Lower and Upper ($LU$) forms.
-* **Gauss-Seidel Method:** An iterative method for solving systems of linear equations with built-in tolerance control.
+* **Cholesky Decomposition:** Solves $AX = B$ systems via $LU$ decomposition.
+* **Gauss-Seidel Method:** An iterative approach for linear systems with adjustable error tolerance.
 
 ### 3. Calculus & Interpolation
-* **Numerical Differentiation:** Calculates derivatives at a specific point using forward, backward, and central difference formulas.
-* **Numerical Integration:**
-  * **Trapezoidal Rule:** Approximates the definite integral under a curve.
-  * **Simpson's 1/3 Rule:** Uses quadratic segments for more accurate integration.
-  * **Simpson's 3/8 Rule:** Employs cubic segments for specialized integration tasks.
-* **Gregory-Newton Interpolation:** Estimates values between known data points using difference tables.
+* **Numerical Differentiation:** Supports Forward, Backward, and Central difference formulas.
+* **Numerical Integration:** Includes Trapezoidal Rule, Simpson’s 1/3, and Simpson’s 3/8 methods.
+* **Gregory-Newton Interpolation:** Computes values using finite difference tables.
 
 ---
 
 ## 🧠 Advanced Function Parser
-
-This tool includes a custom-built **Mathematical Expression Evaluator** using Stack data structures, allowing dynamic function input during runtime. It supports:
-* **Operators:** `+`, `-`, `*`, `/`, `^` (power)
-* **Trigonometry:** `sin`, `cos`, `tan`, `cot` and their inverses (`arcsin`, `arccos`, `arctan`, `arccot`).
-* **Logarithms:** Support for custom base logarithms using `_` notation.
-* **Constants:** Support for $e$ (Euler's number) and $P$ ($\pi$).
+The tool supports a wide range of mathematical expressions thanks to its robust parsing engine:
+* **Operators:** `+`, `-`, `*`, `/`, `^`
+* **Trigonometry:** `sin`, `cos`, `tan`, `cot` & `arcsin`, `arccos`, `arctan`, `arccot`.
+* **Advanced:** Logarithms (custom base via `_`), Euler's number ($e$), and $\pi$ ($P$).
 
 ---
 
 ## 🛠️ Technologies Used
-
-* **Language:** C (Standard C99/C11)
+* **Language:** C (C99/C11 Standard)
 * **Libraries:** `stdio.h`, `stdlib.h`, `math.h`
-* **Paradigm:** Procedural Programming & Custom Stack Implementation
+* **Data Structures:** Custom Stack for operands and operators.
 
-## 🚀 How to Run
 
-1. **Compile the code:**
-   ```bash
-   gcc numerical_calc.c -o numcalc -lm
+---
+*Academic Project for Numerical Analysis.*
